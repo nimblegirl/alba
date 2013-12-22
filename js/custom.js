@@ -238,13 +238,22 @@ $(document).ready(function(){
 	}
 	// submenu
 	var mContainer = $('nav[role="navigation"] .menu'),
-	fHeight = 0;
-	if(mContainer.find('.sub_menu').length){
+		sMenu = $('.secondary_nav .secondary_menu'),
+		fHeight = 0,
+		fsHeight = 0;
+	if(mContainer.find('ul').length){
 		mContainer.find('ul').each(function(){
 			fHeight += $(this).outerHeight();
 		});
-		fHeight += mContainer.children('li').children('ul.sub_menu').position().top - 22;
+		fHeight += mContainer.children('li').children('ul').position().top - 22;
 		mContainer.closest('nav[role="navigation"]').css('height',fHeight);
+	}
+	if(sMenu.length){
+		fsHeight += sMenu.outerHeight() - 5;
+		sMenu.find('ul').each(function(){
+			fsHeight += $(this).outerHeight();
+		});
+		sMenu.closest('.secondary_nav').css('height',fsHeight);
 	}
 });
 $(window).load(function(){

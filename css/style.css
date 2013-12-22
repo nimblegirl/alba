@@ -205,7 +205,6 @@ header{
 }
 .banner{
 	color:#fff;
-	background:#780608;
 	text-transform:uppercase;
 	line-height: 0.9em;
 	font-size:0.8em;
@@ -213,11 +212,16 @@ header{
 	padding:10px 5px 10px 20px;
 	position:relative;
 	margin-left: 24px;
+	background:#a7112a;
+	position:relative;
+	z-index:2;
+	-webkit-transition:background .4s ease;
+	transition:background .4s ease;
 }
 .banner:before{
 	content:"";
-	width:24px;
-	height:21px;
+	width:45px;
+	height:13px;
 	background:inherit;
 	position:absolute;
 	left:100%;
@@ -229,34 +233,28 @@ header{
 	height:0;
 	position:absolute;
 	left:100%;
-	top:21px;
-	border-right:24px solid transparent;
-	border-top:13px solid #780608;
-}
-a.banner{
-	background:#a7112a;
-	-webkit-transition:background .4s ease;
-	transition:background .4s ease;
-}
-a.banner:before{
-	width:45px;
-	height:13px;
-}
-a.banner:after{
 	top:13px;
 	border-top:21px solid #a7112a;	
-	border-right-width:45px;
+	border-right:45px solid transparent;
 	-webkit-transition:border-color .4s ease;
 	transition:border-color .4s ease;
 }
-a.banner:hover,a.banner:hover:before{
+.banner.sales{
+	background:#780608;
+	z-index:1;
+}
+.banner.sales:after{
+	border-top-color:#780608;
+}
+.banner:hover,.banner:hover:before{
 	background:#000;
 	-webkit-transition:background .4s ease;
 	transition:background .4s ease;
 }
-a.banner:hover:after{
+.banner:hover:after{
 	border-top-color:#000;
 }
+
 .h_contact_list{
 	text-align: left;
 }
