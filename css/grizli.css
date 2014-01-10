@@ -479,9 +479,26 @@
 }
 	.single_collection__gallery{
 		text-align: center;
+		position: relative;
 		padding: 83px 55px;
 	}
-
+	
+	.coll_gal_btn{
+		position: absolute;
+		display: block;
+		top: 50%;
+		margin-top: -20px;
+		width: 23px;
+		height: 40px;
+	}
+	.btn_prev{
+		left: 0;
+		background: url("../images/carousel_prev_type_1.png") no-repeat;
+	}
+	.btn_next{
+		right: 0;
+		background: url("../images/carousel_next_type_1.png") no-repeat;
+	}
 .social_icons{
 	height: 40px;
 }

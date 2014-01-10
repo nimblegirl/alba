@@ -352,7 +352,7 @@ $(window).load(function(){
 		$($(this).attr("data-show")).slideToggle('slow');
 	})
 	$(".lookbook_list").trigger('owl.next');
-    $('#demo3').boutique({
+    $('#single_galery').boutique({
         front_img_width:    320,
         front_img_height:   245,
         autoplay:           true,
