@@ -1,4 +1,6 @@
 @import "grizli.css";
+@import "demo3.css";
+@import "boutique.css";
 @import "superfish.css";
 *{
 	margin:0;
@@ -301,7 +303,8 @@ header{
 	color:#000;
 	font-weight: bold;
 	text-transform: uppercase;
-	letter-spacing:1px;
+	/*letter-spacing:1px;*/
+letter-spacing: 0.3px;
 	font-size:0.84em;
 	line-height:1.2em;
 	display:block;
@@ -532,6 +535,13 @@ label{
 	-webkit-transition:opacity 0.4s ease,bottom 0.8s ease;
 	transition:opacity 0.4s ease,bottom 0.8s ease;
 }
+.bottom_arrow.lb{
+	position:absolute;
+	bottom:50%;
+	margin-bottom:-18px;
+	-webkit-transition:opacity 0.8s ease,bottom 1.4s ease;
+	transition:opacity 0.8s ease,bottom 1.4s ease;
+}
 .bottom_arrow.out{
 	opacity:0;
 	bottom:900px;
@@ -566,7 +576,7 @@ label{
 }
 .collection_banner{
 	position:absolute;
-	top:280px;
+	top:1180px;
 	left:0;
 	padding:35px 0 26px;
 	width:100%;
@@ -576,6 +586,10 @@ label{
 	background:rgba(255,255,255,0.8);
 	-webkit-transition:position .4s ease;
 	transition:position .4s ease;
+}
+
+.collection_banner.new_collection{
+    top:1500px;
 }
 .parallax_container.type2 .collection_banner{
 	top:500px;
@@ -591,6 +605,7 @@ label{
 .parallax_container .collection_banner.fixed{
 	position:fixed;
 	z-index:10;
+    top: 61px;
 }
 .shop_mini_section{
 	position:absolute;
@@ -694,9 +709,9 @@ label{
 	-webkit-transition:-webkit-transform 1.2s ease;
 	transition:transform 1.2s ease;
 }
-.lookbook_list .owl-item:hover > div > img{
-	-webkit-transform:scale(1.080);
-	transform:scale(1.080);
+.lookbook_list .owl-item:hover > div.zoom-img > img{
+	-webkit-transform:scale(1.50);
+	transform:scale(1.50);
 }
 .lookbook_list > div .hover_container{
 	position:absolute;
@@ -709,13 +724,18 @@ label{
 }
 .lookbook_list > div .hover_container .shop_mini_section{
 	position:absolute;
-	right:-100%;
-	top:-50px;
-	-webkit-transition:right 0.4s ease;
-	transition:right 0.4s ease;
+    left: 133px;
+    top: -56px;
 }
-.lookbook_list > div .hover_container.rollin .shop_mini_section{
-	right:10px;
+.lookbook_list .carousel-item{
+    height: 521px;
+    overflow: hidden;
+}
+.lookbook_list .carousel-item .normal-image{
+    overflow: hidden;
+    float: left;
+    width: 445px;
+    height: 100%;
 }
 [class^="pattern_"]{
 	position:absolute;
@@ -753,6 +773,7 @@ label{
 	background:#fff;
 }
 .social_icons_wrap{
+    width: 445px;
 	background:#fff;
 	margin-right:-10px;
 	padding:20px 20px 20px 0;
@@ -760,10 +781,20 @@ label{
 	-moz-box-sizing:border-box;
 	-webkit-transition:-webkit-transform 0.4s ease;
 	transition:transform 0.4s ease;
-	-webkit-transform:translateY(60px);
-	transform:translateY(60px);
+	-webkit-transform:translateY(75px);
+	transform:translateY(75px);
 }
 .lookbook_list .owl-item:hover .social_icons_wrap{
+	-webkit-transform:translateY(0px);
+	transform:translateY(0px);
+}
+.lookbook_list .owl-item .shop_mini_section{
+    -webkit-transition:-webkit-transform 0.4s ease;
+    transition:transform 0.4s ease;
+	-webkit-transform:translateY(50px);
+	transform:translateY(50px);
+}
+.lookbook_list .owl-item:hover .shop_mini_section{
 	-webkit-transform:translateY(0px);
 	transform:translateY(0px);
 }
