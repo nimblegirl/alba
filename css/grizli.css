@@ -219,12 +219,24 @@
 	margin-bottom: 48px;
 }
 
-/*-------------> About Page <--------------*/
+/*-------------> About Pages <--------------*/
 .big_title1{
 	font-size: 60px;
 	line-height: 74px;
 	padding: 61px 0 40px;
 	margin-bottom: 0px;
+}
+
+.big_title2{
+	font-size: 40px;
+	line-height: 48px;
+	color: #000;
+	margin-bottom: 40px;
+}
+
+
+.pad_box{
+	padding: 0px 0 0;
 }
 
 .about_red_box{
@@ -242,6 +254,9 @@
 .font1{
 	font-size: 18px;
 	line-height: 40px;
+}
+.font1 strong{
+	font-weight: 700;
 }
 .font1 p{margin-bottom: 16px;}
 
@@ -265,6 +280,107 @@
 		margin-top: -23px;
 	}
 
+.about_cards{
+
+}
+
+.about_cards img:first-child{
+	margin-right: 21px;
+}
+
+.red_link{
+	color: #a7112a;
+	text-decoration: underline;
+}
+
+.red_link:hover{
+	text-decoration: none;
+}
+
+.p2{
+	margin-bottom: 52px;
+}
+p.p3,
+.p3{
+	margin-bottom: 40px;
+}
+p.p4{
+	margin-bottom: 25px;
+}
+p.p5,
+.p5{
+	margin-bottom: 45px;
+}
+p.p6,
+.p6{
+	margin-bottom: 33px;
+}
+p.p7,
+.p7{
+	margin-bottom: 0px;
+}
+
+.p_stripe{
+	border-bottom: 3px solid #e1e1e1;
+	padding-bottom: 45px;
+	margin-bottom: 30px;
+}
+
+.small_title,
+.small_title1{
+	font-size: 18px;
+	line-height: 22px;
+	color: #000;
+	font-family: "Calibri";
+	font-weight: bold;
+	padding-bottom: 4px;
+}
+
+.small_title1{
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 12px;
+	text-transform: uppercase;
+}
+
+.list1{
+	line-height: 30px;
+}
+.list1>li{
+	background: url(../images/gray_marker.jpg) 0 15px no-repeat;
+	padding: 0 0 0 20px;
+}
+
+.form_balance{
+	margin-bottom: 77px;
+}
+
+.form_balance__row{
+	overflow: hidden;
+}
+
+.label{
+	float: left;
+	width: 224px;
+	line-height: 22px;
+	padding-top: 2px;
+	min-height: 38px;
+}
+
+.form_balance input[type="text"]{
+	border: 3px solid #e1e1e1;
+	padding: 0px 5px 3px;
+	font-size: 16px;
+	width: 375px;
+	margin: 0;
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.form_balance input[type="text"].small_field{
+	width: 110px;
+}
 /*------------> Maps store page <----------------*/
 .map_box{
 	padding: 39px 0 19px;
@@ -590,4 +706,86 @@
 	}
 	.product_info{
 		overflow: hidden;
+	}
+
+.box-modal{
+	background: #fff;
+	width: 885px;
+	font-size: 18px;
+	line-height: 22px;
+	position: relative;
+	-webkit-box-shadow: 0 0 81px rgba(0,0,0,0.18);
+	-moz-box-shadow: 0 0 81px rgba(0,0,0,0.18);
+	box-shadow: 0 0 81px rgba(0,0,0,0.18);
+}
+
+	.box-modal__top{
+		background: #780608;
+		color: #fff;
+		padding: 30px 30px 28px;
+	}
+
+	.box-modal__title{
+		font-size: 40px;
+		line-height: 48px;
+		padding-bottom: 8px;
+	}
+
+
+	.arcticmodal-close{
+		position: absolute;
+		width: 22px;
+		height: 22px;
+		background: url(../images/popup_close.png) 0 0 no-repeat;
+		right: -30px;
+		top: -30px;
+		cursor: pointer;
+	}
+
+	.box-modal__content{
+		padding: 25px 35px 30px;
+	}
+
+	.box-modal__address_list{
+		margin-bottom: 27px;
+	}
+
+	.box-modal__address_list>li{
+		padding: 7px 0 6px 40px;
+		height: 26px;
+	}
+	.box-modal__address_list .metro_icon{
+		background: url(../images/metro_icon.png) 0 50% no-repeat;
+	}
+	.box-modal__address_list .phone_icon{
+		background: url(../images/phone_icon1.png) 0 50% no-repeat;
+	}
+	.box-modal__address_list .clock_icon{
+		background: url(../images/clock_icon.png) 0 50% no-repeat;
+	}
+
+
+/*=====> Francising pages <=========*/
+.price_table{
+	width: 100%;
+	text-align: left;
+	margin: 17px 0 0;
+}
+	.price_table th{
+		font-weight: bold;
+		letter-spacing: 2px;
+		font-size: 16px;
+		text-transform: uppercase;
+		padding-bottom: 10px !important;
+		border: none !important;
+	}
+
+	.price_table th,
+	.price_table td{
+		padding: 15px 0 22px;
+		border-top: 3px solid #e1e1e1;
+	}
+
+	.price_table__col1{
+		width: 420px;
 	}

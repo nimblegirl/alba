@@ -3,6 +3,7 @@
 @import "demo3.css";
 @import "boutique.css";
 @import "superfish.css";
+@import "jquery.arcticmodal-0.3.css";
 *{
 	margin:0;
 	padding:0;
@@ -379,7 +380,7 @@ letter-spacing: 0.3px;
 .next_page,.prev_page{
 	text-transform: uppercase;
 	color:#000;
-	font-weight: 600;
+	font-weight: bold;
 	font-size:0.9em;
 	line-height: 1em;
 	display:inline-block;
@@ -527,7 +528,8 @@ label{
 	height:188px;
 	margin-top:7px;
 }
-#contact_form input[type="submit"]{
+#contact_form input[type="submit"],
+.form_btn{
 	border:2px solid #000;
 	color:#000;
 	text-transform: uppercase;
