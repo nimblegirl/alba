@@ -6,6 +6,9 @@
 	background: url("../images/gradient_box_bg.png") repeat-x;
 	min-height: 500px;
 }
+.gradient_box.type_2{
+	padding-top:72px;
+}
 .bg_white{
 	position: relative;
 }
@@ -468,6 +471,22 @@
 	     	-o-transition-delay: 0.3s;
 	     	-moz-transition-delay: 0.3s;
 	     	transition-delay: 0.3s;	
+		}
+		.ie8 .collection_item:before{
+			background:url("../images/old_ie_collection_bg.png") repeat;
+			bottom:100%;
+			top:auto;
+		}
+		.ie8 .collection_item:hover:before{
+			bottom:0;
+		}
+		.ie8 .collection_item .collection_item__title{
+			top:100%;
+			bottom:auto;
+		}
+		.ie8 .collection_item:hover .collection_item__title{
+			top:auto;
+			bottom:0;
 		}
 
 		.collection_btn{

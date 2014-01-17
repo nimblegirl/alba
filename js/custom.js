@@ -397,7 +397,7 @@ $(window).load(function(){
 	$(".toggle_link").click(function(){
 		$(this).toggleClass("active")
 		$($(this).attr("data-show")).slideToggle('slow');
-	})
+	});
 	$(".lookbook_list").trigger('owl.next');
 	if($('#single_galery').length){
 	$('#single_galery').boutique({
