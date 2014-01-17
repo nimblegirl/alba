@@ -358,6 +358,13 @@ $(document).ready(function(){
 			$(this).find('.title').stop().animate({'margin-top':'0'});
 		});
 	}
+	// toggle
+	if($('.toggle').length){
+		$('.toggle').on("click","dt",function(){
+			$(this).toggleClass("active");
+			$(this).next("dd").slideToggle(300);
+		});
+	}
 });
 
 
@@ -394,9 +401,10 @@ configure_lookbook();
 
 });
 $(window).load(function(){
-	$(".toggle_link").click(function(){
+	$(".toggle_link").click(function(event){
 		$(this).toggleClass("active")
 		$($(this).attr("data-show")).slideToggle('slow');
+		event.preventDefault();
 	});
 	$(".lookbook_list").trigger('owl.next');
 	if($('#single_galery').length){

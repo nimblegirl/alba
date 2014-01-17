@@ -9,7 +9,7 @@ nav{ position:relative; margin: 0px 0 0 0;}
 	text-align: center;
 }
 
-.menu li ul,
+.menu li ul,.sub_menu,
 .menu li.sfHover>ul,
 .secondary_menu ul{left:0;top:40px;border-top: 3px solid #e1e1e1;width: 100%;padding:15px 0 0; z-index:99; text-align: center;}
 .secondary_menu ul{
@@ -18,7 +18,7 @@ nav{ position:relative; margin: 0px 0 0 0;}
 }
 
 .menu li ul li,
-.secondary_menu li{display: inline-block; margin: 0 10px;}
+.secondary_menu li,.sub_menu li{display: inline-block; margin: 0 10px;}
 .menu>li>ul>li>a{}
 .menu li li a:hover, .menu li.sfHover li.sfHover>a,
 .menu li li.current>a,

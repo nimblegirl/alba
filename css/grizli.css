@@ -5,6 +5,7 @@
 .gradient_box{
 	background: url("../images/gradient_box_bg.png") repeat-x;
 	min-height: 500px;
+	padding:1px 0 0;
 }
 .gradient_box.type_2{
 	padding-top:72px;
@@ -26,9 +27,6 @@
 .news_list__item:hover .bg_white:before{
 	background-color: #a7112a;
 	height: 500%;
-}
-.news_list{
-
 }
 	.news_list__item{
 		overflow: hidden;
