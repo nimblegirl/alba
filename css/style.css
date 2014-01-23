@@ -123,6 +123,7 @@ h3{
 	color:#780608;
 	padding-bottom:0;
 }
+.p_rel{position: relative;}
 .text_container_type_2 h3{color:#fff;}
 .secondary h1{
 	padding-bottom:50px;
@@ -267,6 +268,11 @@ header{
 	z-index:2;
 	-webkit-transition:background .4s ease;
 	transition:background .4s ease;
+}
+.extra_banner{
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 .banner:before{
 	content:"";
