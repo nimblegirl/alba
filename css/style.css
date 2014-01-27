@@ -815,17 +815,27 @@ label{
     width: 445px;
     height: 100%;
 }
-[class^="pattern_"]{
+.owl-prev,
+.owl-next{
 	position:absolute;
 	width:500%;
 	height:100%;
 	top:0;
-	background:rgba(255,255,255,0.65);
 }
-.pattern_right{right:100%;}
-.pattern_left{left:100%;}
+.owl-prev{right:100%;background: url(../images/carousel_prev_type_1.png) 98% 50% no-repeat rgba(255,255,255,0.65);}
+.owl-next{left:100%;background: url(../images/carousel_next_type_1.png) 100px 50% no-repeat rgba(255,255,255,0.65);}
 .relative{
 	position:relative;
+}
+.owl-prev:hover,
+.owl-next:hover{
+	background-image: none;
+}
+.owl-prev:hover{
+	cursor: url(../images/carousel_prev_type_1.png), default;
+}
+.owl-next:hover{
+	cursor: url(../images/carousel_next_type_1.png), default;
 }
 [class$="_pattern"]{
 	height:100%;
@@ -1104,4 +1114,17 @@ label{
 		width:1366px;
 		height:768px;
 	}
+}
+
+
+body.green .btn{
+	background: green;
+}
+
+body.orange .special_bg{
+	background: orange;
+}
+
+.special_color{
+	
 }
