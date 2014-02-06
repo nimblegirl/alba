@@ -1407,12 +1407,12 @@ body.orange .special_bg{
 		box-sizing: border-box;
 	}
 	.main_gradient{padding-bottom: 60px;}
-	.menu li ul, .sub_menu, .menu li.sfHover>ul, .secondary_menu ul{
+	.menu li ul, .sub_menu, .menu li.sfHover>ul{
 		border: none;
 		position: static;
 		padding: 10px 0 10px 45px;
 	}
-	.menu li ul li, .secondary_menu li, .sub_menu li{
+	.menu li ul li, .sub_menu li{
 		display: block;
 		margin: 0;
 		text-align: left;
@@ -1428,6 +1428,9 @@ body.orange .special_bg{
 	.sub_menu li a:hover{
 		color: #a7112a;
 	}
+	.trend_column{width: auto;}
+	.trend_column.type_2{margin: 0;}
+	.gradient_box.m_top{margin-top: 0;}
 }
 @media screen and (max-width:484px){
 	.discount_button,.shop_btn{
