@@ -1510,3 +1510,70 @@ body.orange .special_bg{
 		width:40%;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SLAVIK*/
+
+@media screen and (max-width:768px){
+	.product_label{
+		width: 50%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+
+@media screen and (max-width:484px){
+	.product_label{
+		float: none;
+		text-align: left;
+		width: auto;
+	}
+	.product_description{
+		padding: 0 0 40px 20px;
+	}
+}
