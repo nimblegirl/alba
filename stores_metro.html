@@ -19,7 +19,7 @@
 		<header role="banner">
 			<div class="container clearfix t_align_c">
 				<!--language settings-->
-				<div class="f_left">
+				<div class="f_left d_sm_none d_xs_none">
 					<ul class="ls clearfix">
 						<li class="active"><a href="#">РУС</a></li>
 						<li><a href="#">ENG</a></li>
@@ -27,20 +27,26 @@
 					</ul>
 				</div>
 				<!--logo-->
-				<a class="logo" href="index.html">
+				<a class="logo f_sm_left f_xs_left d_sm_block d_xs_block" href="index.html">
 					<img src="images/logo.jpg" alt="">
 				</a>
-				<div class="f_right">
+				<div class="f_right f_sm_left f_xs_left">
 					<ul class="h_contact_list">
 						<li class="phone"><a href="#">8 800-555-00-30</a></li>
 						<li class="mail"><a href="mailto:#">info@the-alba.com</a></li>
 					</ul>
-					<a href="#" class="shop_btn">интернет-магазин</a>
+					<a href="#" class="shop_btn f_sm_right f_xs_right">интернет-магазин</a>
 				</div>
 			</div>
 		</header>
 		<!--main menu-->
-		<section class="navigation_wrap">
+		<section class="navigation_wrap p_sm_0 p_xs_0">
+			<button id="menu_button" class="f_left d_none d_sm_block d_xs_block">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<a href="#" class="d_none f_sm_left f_xs_left d_sm_block d_xs_block discount_button">Autumn sale! 30%</a>
 			<div class="container">
 				<nav role="navigation">
 					<ul class="menu clearfix">
@@ -65,11 +71,11 @@
 		<!-- ... -->
 		
 		<!-- Content -->
-		<section class="gradient_box">
+		<section class="gradient_box m_top">
 			<div class="container font1">
 				
-				<div class="wrapper map_box">
-					<ul class="maps_list">
+				<div class="wrapper map_box p_xs_0">
+					<ul class="maps_list f_xs_none">
 						<li><a class="active" href="#">Москва</a></li>
 						<li><a href="#">Санкт-Петербург</a></li>
 						<li><a href="#">Воронеж</a></li>
@@ -102,7 +108,7 @@
 
 				<ul class="address_list">
 					<li class="wrapper address_list__item">
-						<div class="address_list___left_col">
+						<div class="address_list___left_col f_xs_none">
 							<h2 class="address_title">ТРЦ "Золотой Вавилон"</h2>
 							<dl class="address">
 								<dd>Станция метро: Проспект мира</dd>
@@ -112,29 +118,7 @@
 							</dl>
 							<a href="#" class="map_link">на карте</a>
 						</div>
-						<div class="address_list___right_col">
-							<h2 class="address_title">ТРЦ "Золотой Вавилон"</h2>
-							<dl class="address">
-								<dd>Станция метро: Проспект мира</dd>
-								<dd>Проспект Мира, д. 211, кор. 2</dd>
-								<dd>Тел. (495) 649 70 82</dd>
-								<dd>Режим работы: с 10:00 до 22:00</dd>
-							</dl>
-							<a href="#" class="map_link">на карте</a>
-						</div>
-					</li>
-					<li class="wrapper address_list__item">
-						<div class="address_list___left_col">
-							<h2 class="address_title">ТРЦ "Золотой Вавилон"</h2>
-							<dl class="address">
-								<dd>Станция метро: Проспект мира</dd>
-								<dd>Проспект Мира, д. 211, кор. 2</dd>
-								<dd>Тел. (495) 649 70 82</dd>
-								<dd>Режим работы: с 10:00 до 22:00</dd>
-							</dl>
-							<a href="#" class="map_link">на карте</a>
-						</div>
-						<div class="address_list___right_col">
+						<div class="address_list___right_col f_xs_none">
 							<h2 class="address_title">ТРЦ "Золотой Вавилон"</h2>
 							<dl class="address">
 								<dd>Станция метро: Проспект мира</dd>
@@ -146,7 +130,7 @@
 						</div>
 					</li>
 					<li class="wrapper address_list__item">
-						<div class="address_list___left_col">
+						<div class="address_list___left_col f_xs_none">
 							<h2 class="address_title">ТРЦ "Золотой Вавилон"</h2>
 							<dl class="address">
 								<dd>Станция метро: Проспект мира</dd>
@@ -156,7 +140,29 @@
 							</dl>
 							<a href="#" class="map_link">на карте</a>
 						</div>
-						<div class="address_list___right_col">
+						<div class="address_list___right_col f_xs_none">
+							<h2 class="address_title">ТРЦ "Золотой Вавилон"</h2>
+							<dl class="address">
+								<dd>Станция метро: Проспект мира</dd>
+								<dd>Проспект Мира, д. 211, кор. 2</dd>
+								<dd>Тел. (495) 649 70 82</dd>
+								<dd>Режим работы: с 10:00 до 22:00</dd>
+							</dl>
+							<a href="#" class="map_link">на карте</a>
+						</div>
+					</li>
+					<li class="wrapper address_list__item">
+						<div class="address_list___left_col f_xs_none">
+							<h2 class="address_title">ТРЦ "Золотой Вавилон"</h2>
+							<dl class="address">
+								<dd>Станция метро: Проспект мира</dd>
+								<dd>Проспект Мира, д. 211, кор. 2</dd>
+								<dd>Тел. (495) 649 70 82</dd>
+								<dd>Режим работы: с 10:00 до 22:00</dd>
+							</dl>
+							<a href="#" class="map_link">на карте</a>
+						</div>
+						<div class="address_list___right_col f_xs_none">
 							<h2 class="address_title">ТРЦ "Золотой Вавилон"</h2>
 							<dl class="address">
 								<dd>Станция метро: Проспект мира</dd>
@@ -176,7 +182,7 @@
 		<footer class="t_align_c">
 			<div class="container">
 				<!--footer nav-->
-				<ul class="footer_nav clearfix">
+				<ul class="footer_nav d_xs_none clearfix">
 					<li><a href="#">Адреса Салонов</a></li>
 					<li><a href="#">Контакты</a></li>
 					<li><a href="#">Интернет-Магазин</a></li>
