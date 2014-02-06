@@ -1398,6 +1398,15 @@ body.orange .special_bg{
 	.d_xs_none{
 		display:none;
 	}
+	#contact_form input[type="text"],
+	#contact_form input[type="email"],
+	#contact_form textarea{
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.main_gradient{padding-bottom: 60px;}
 }
 @media screen and (max-width:484px){
 	.discount_button,.shop_btn{
