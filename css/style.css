@@ -1407,6 +1407,27 @@ body.orange .special_bg{
 		box-sizing: border-box;
 	}
 	.main_gradient{padding-bottom: 60px;}
+	.menu li ul, .sub_menu, .menu li.sfHover>ul, .secondary_menu ul{
+		border: none;
+		position: static;
+		padding: 10px 0 10px 45px;
+	}
+	.menu li ul li, .secondary_menu li, .sub_menu li{
+		display: block;
+		margin: 0;
+		text-align: left;
+		padding: 3px 0px;
+	}
+	.menu li ul li a,
+	.secondary_menu li a,
+	.sub_menu li a{
+		color: #d4d4d4;
+	}
+	.menu li ul li a:hover,
+	.secondary_menu li a:hover,
+	.sub_menu li a:hover{
+		color: #a7112a;
+	}
 }
 @media screen and (max-width:484px){
 	.discount_button,.shop_btn{
